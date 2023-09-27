@@ -1,0 +1,9 @@
+.aerial {
+    font-size: calc(30px + (45 - 30) * ((100vw - 575px) / (1500 - 575)));
+    line-height: calc(35px + (50 - 35) * ((100vw - 575px) / (1500 - 575)));
+    color: white;
+}
+
+.logo {
+    filter: invert(100%);
+}
