@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spiri - About Us</title>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../assets/images/black-logo.svg">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="../scripts/tailwind.js"></script>
     <link href="../styles/home.css" rel="stylesheet" />
@@ -23,34 +24,50 @@
     <nav class='flex mx-auto w-full xl:max-w-screen-2xl fixed top-0 z-50 bg-white mt-[36px]'>
         <div class="flex justify-center py-5 w-full xl:max-w-screen-2xl">
             <div class='flex justify-between w-full xl:max-w-screen-xl nrml:px-30 sm:px-5 max-sm:px-2'>
-                <div class="flex items-center">
+                <a href="./index.html" class="flex items-center">
                     <img src="../assets/images/black-logo.svg" alt="Spiri - Logo"
                         class='min-w-[50px] w-20 cursor-pointer' />
-                </div>
+                </a>
                 <div class="flex items-center space-x-5 max-nrml:hidden">
+                    <a href="./index.html" class="cursor-pointer hover:text-red hover:underline">Home</a>
+                    <a href="./about.html" class="cursor-pointer hover:text-red hover:underline">About Us</a>
+                    <a href="./gear.html" class="cursor-pointer hover:text-red hover:underline">The Gear</a>
+                    <a href="./process.html" class="cursor-pointer font-semibold text-red hover:underline">The
+                        Process</a>
+                    <a href="./contact.html" class="cursor-pointer hover:text-red hover:underline">Contact</a>
+                </div>
+                <div class='flex items-center cursor-pointer justify-center scale-100 hover:scale-150 hover:transition-all transition-all nrml:hidden'
+                    id="hamburger">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </div>
+            </div>
+            <div class="fixed left-0 w-full h-[140vh] z-50 transition-all ease-in-out duration-700 bg-white drop-shadow-lg"
+                id="sidebar">
+                <div class="px-12 max-sm:px-8 pt-5 pb-2 flex justify-between">
+                    <a href="./index.html" class="flex items-center cursor-pointer">
+                        <Image src="../assets/images/black-logo.svg" alt="Spiri - Logo"
+                            class='max-sm:w-[40px] w-[60px]' />
+                    </a>
+                    <div class="cursor-pointer scale-100 hover:scale-125 hover:transition-all transition-all"
+                        id="close">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center space-y-4 font-Inter justify-center">
                     <a href="./index.html" class="cursor-pointer hover:text-red hover:underline">Home</a>
                     <a href="./about.html" class="cursor-pointer hover:text-red hover:underline">About Us</a>
                     <a href="./gear.html" class="cursor-pointer hover:text-red hover:underline">The Gear</a>
                     <a href="./process.html" class="cursor-pointer hover:text-red hover:underline">The Process</a>
                     <a href="./contact.html" class="cursor-pointer hover:text-red hover:underline">Contact</a>
                 </div>
-                <div
-                    class='flex items-center cursor-pointer justify-center scale-100 hover:scale-150 hover:transition-all transition-all nrml:hidden'>
-                    ++
-                </div>
             </div>
-            <!-- <div class="fixed left-0 w-full h-[140vh] z-50 transition-all ease-in-out duration-700 bg-white drop-shadow-lg">
-                <div class="px-12 max-sm:px-8 pt-5 pb-2 flex justify-between">
-                    <div class="flex items-center cursor-pointer">
-                        <Image src="../assets/images/black-logo.svg" alt="Spiri - Logo" class='max-sm:w-[40px]' />
-                    </div>
-                    <div class="cursor-pointer scale-100 hover:scale-125 hover:transition-all transition-all">
-                    </div>
-                </div>
-                <div class="flex flex-col items-center space-y-4 font-Inter justify-center">
-                   
-                </div>
-            </div> -->
         </div>
     </nav>
 
@@ -63,10 +80,46 @@
             <div class="absolute bottom-10 left-10 w-3 h-3 max-sm:w-2 max-sm:h-2 bg-white rounded-full m-1"></div>
             <div class="absolute bottom-10 right-10 w-3 h-3 max-sm:w-2 max-sm:h-2 bg-white rounded-full m-1"></div>
             <p
-                class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 right-0 text-white text-center py-1 text-shadow-[2px_4px_4px_black] lg:text-h2 md:text-h3 sm:text-h4 max-sm:text-h5">
+                class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 right-0 text-white text-center py-1 [text-shadow:_2px_4px_4px_black] lg:text-h2 md:text-h3 sm:text-h4 max-sm:text-h5">
                 How we do what we do
             </p>
         </div>
+    </section>
+
+    <section class='mx-auto lg:w-2/3 max-lg:px-10'>
+        <h3 class='text-h3 mb-5'>The process</h3>
+        <p class='mb-10'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel accumsan ante.
+            Proin laoreet laoreet felis, ac tempor arcu tristique pharetra. Morbi egestas massa
+            sit amet tortor dignissim, vitae semper massa egestas. Integer bibendum consectetur
+            eros, quis sollicitudin nisl sagittis nec. Pellentesque volutpat nisi neque, non dapibus
+            ante pharetra eget. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse
+            quis efficitur justo. Suspendisse feugiat, tortor eu sagittis feugiat, eros tellus maximus
+            quam, et ultrices mi diam a mauris. Suspendisse consequat, purus et dignissim porta, mauris
+            massa aliquet tortor, sit amet laoreet libero turpis sit amet elit.</p>
+
+        <div class="relative w-full flex justify-center overflow-hidden xl:max-w-screen-2xl">
+            <img src="../assets/images/processDrone.png" alt="Sample Image 1"
+                class="object-cover min-w-[900px] h-full flex justify-center items-center mb-10" />
+        </div>
+        <p>
+            Nam posuere felis eu elementum malesuada. Suspendisse maximus nisl sit amet feugiat dictum.
+            Mauris porttitor lacinia luctus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia curae; Mauris id enim dolor. Donec sit amet laoreet ante. Sed id maximus lorem.
+            Maecenas lacinia convallis nunc vitae rhoncus. Nam ultrices pulvinar rutrum. Sed nec imperdiet
+            justo. Duis rutrum eros id auctor blandit. Integer placerat, dolor gravida venenatis vulputate,
+            diam arcu placerat enim, faucibus finibus magna tortor vel libero. Vivamus vulputate faucibus pretium.
+            Sed suscipit neque eu sem posuere eleifend. Morbi porta mi sit amet augue lobortis aliquet.
+            <br /><br />
+            Praesent imperdiet in erat nec accumsan. Suspendisse eu nulla maximus, molestie dolor non, lobortis magna.
+            Morbi eu elementum ligula, ut condimentum turpis. Cras ornare, lorem ac luctus facilisis, velit felis
+            tincidunt ligula, sit amet varius erat libero ut dolor. Sed semper sem non magna posuere, nec mollis odio
+            accumsan. Suspendisse urna dolor, malesuada at porta ut, feugiat ornare nibh. Quisque elit sem, eleifend at
+            mattis quis, ornare non arcu. Pellentesque aliquet urna ac erat auctor, a commodo mi euismod. Integer
+            vulputate
+            porttitor orci, sed pharetra dolor tincidunt vel. Fusce id maximus risus. Aliquam erat volutpat. Quisque non
+            nisl sit amet erat aliquam fermentum in eu augue. Nam volutpat tortor eget cursus auctor. Cras vel eleifend
+            lacus, id congue lorem.
+        </p>
     </section>
 
     <Section class="flex justify-center py-10">
@@ -74,8 +127,8 @@
             class="flex flex-col md:flex-row w-full xl:max-w-screen-xl nrml:px-40 sm:px-5 max-sm:px-2 bg-red-300 gap-2">
             <div class="flex flex-row max-xs:flex-col gap-3">
                 <!-- Image 1 -->
-                <div class="relative w-full group overflow-hidden transform transition duration-500 hover:scale-105
-                    cursor-pointer">
+                <a href="./about.html" class="relative w-full group overflow-hidden transform transition duration-500 hover:scale-105
+                        cursor-pointer">
                     <img src="../assets/images/about-link.png" alt="Sample Image 1"
                         class="object-cover w-full h-full group-hover:scale-110 transition duration-300 ease-in-out" />
                     <div class="absolute top-5 left-5 w-2 h-2 bg-white rounded-full m-1 z-50"></div>
@@ -86,11 +139,11 @@
                         About Us
                     </p>
                     <div class="absolute w-full h-full inset-y-0 mix-blend-multiply bg-aqua"></div>
-                </div>
+                </a>
 
                 <!-- Image 2 -->
-                <div class="relative w-full group overflow-hidden transform transition duration-500 hover:scale-105
-                    cursor-pointer">
+                <a href="./gear.html" class="relative w-full group overflow-hidden transform transition duration-500 hover:scale-105
+                        cursor-pointer">
                     <img src="../assets/images/gear-link.png" alt="Sample Image 1"
                         class="object-cover w-full h-full group-hover:scale-110 transition duration-300 ease-in-out" />
                     <div class="absolute top-5 left-5 w-2 h-2 bg-white rounded-full m-1 z-50"></div>
@@ -101,12 +154,12 @@
                         The Gear
                     </p>
                     <div class="absolute w-full h-full inset-y-0 mix-blend-multiply bg-yellow"></div>
-                </div>
+                </a>
             </div>
             <div class="flex flex-row max-xs:flex-col gap-3">
                 <!-- Image 3 -->
-                <div class="relative w-full group overflow-hidden transform transition duration-500 hover:scale-105
-                                    cursor-pointer">
+                <a href="./process.html" class="relative w-full group overflow-hidden transform transition duration-500 hover:scale-105
+                                        cursor-pointer">
                     <img src="../assets/images/process-link.png" alt="Sample Image 1"
                         class="object-cover w-full h-full group-hover:scale-110 transition duration-300 ease-in-out" />
                     <div class="absolute top-5 left-5 w-2 h-2 bg-white rounded-full m-1 z-50"></div>
@@ -117,11 +170,11 @@
                         The Process
                     </p>
                     <div class="absolute w-full h-full inset-y-0 mix-blend-multiply bg-grey"></div>
-                </div>
+                </a>
 
                 <!-- Image 4 -->
-                <div class="relative w-full group overflow-hidden transform transition duration-500 hover:scale-105
-                                    cursor-pointer">
+                <a href="./contact.html" class="relative w-full group overflow-hidden transform transition duration-500 hover:scale-105
+                                        cursor-pointer">
                     <img src="../assets/images/contact-link.png" alt="Sample Image 1"
                         class="object-cover w-full h-full group-hover:scale-110 transition duration-300 ease-in-out" />
                     <div class="absolute top-5 left-5 w-2 h-2 bg-white rounded-full m-1 z-50"></div>
@@ -132,7 +185,7 @@
                         Contact Us
                     </p>
                     <div class="absolute w-full h-full inset-y-0 mix-blend-multiply bg-red"></div>
-                </div>
+                </a>
             </div>
         </div>
     </Section>
@@ -140,38 +193,38 @@
     <footer class="bg-grey text-white md:py-30 max-md:py-20 flex justify-center w-full">
         <div
             class="flex max-sm:flex-col gap-y-10 justify-between w-full xl:max-w-screen-xl nrml:px-30 sm:px-5 max-sm:px-2">
-            <div class="flex items-center pt-5 sm:w-[45%] w-full">
+            <a href="./index.html" class="flex pt-5 sm:w-[45%] w-full">
                 <img src="../assets/images/black-logo.svg" alt="Spiri - Logo"
-                    class="min-w-[90px] cursor-pointer logo" />
-            </div>
+                    class="min-w-[90px] w-[90px] h-fit cursor-pointer logo" />
+            </a>
             <div class='sm:w-[55%] w-full'>
                 <h2 class="aerial">Aerial Intelligence.</h2>
                 <div class='flex md:gap-20 max-md:gap-10 mt-5 w-full'>
                     <ul class="flex flex-col gap-3 list-none font-lato">
-                        <li class="mb-2 md:mb-0 lg:text-fs-md text-fs-sm hover:underline hover:text-red">
-                            <span>About Us</span>
+                        <li class="cursor-pointer mb-2 md:mb-0 lg:text-fs-md text-fs-sm hover:underline hover:text-red">
+                            <a href="./about.html">About Us</a>
                         </li>
-                        <li class="mb-2 md:mb-0 lg:text-fs-md text-fs-sm hover:underline hover:text-red">
-                            <span>The Gear</span>
+                        <li class="cursor-pointer mb-2 md:mb-0 lg:text-fs-md text-fs-sm hover:underline hover:text-red">
+                            <a href="./gear.html">The Gear</a>
                         </li>
-                        <li class="mb-2 md:mb-0 lg:text-fs-md text-fs-sm hover:underline hover:text-red">
-                            <span>The Process</span>
+                        <li class="cursor-pointer mb-2 md:mb-0 lg:text-fs-md text-fs-sm hover:underline hover:text-red">
+                            <a href="./process.html">The Process</a>
                         </li>
-                        <li class="mb-2 md:mb-0 lg:text-fs-md text-fs-sm hover:underline hover:text-red">
-                            <span>Shop</span>
+                        <li class="cursor-pointer mb-2 md:mb-0 lg:text-fs-md text-fs-sm hover:underline hover:text-red">
+                            <a href="./shop.html">Shop</a>
                         </li>
-                        <li class="mb-2 md:mb-0 lg:text-fs-md text-fs-sm hover:underline hover:text-red">
-                            <span>Contact</span>
+                        <li class="cursor-pointer mb-2 md:mb-0 lg:text-fs-md text-fs-sm hover:underline hover:text-red">
+                            <a href="./contact.html">Contact</a>
                         </li>
                     </ul>
                     <ul class='flex flex-col gap-3 list-none font-lato'>
-                        <li class="mb-2 md:mb-0 lg:text-fs-md text-fs-sm hover:underline hover:text-red">
+                        <li class="cursor-pointer mb-2 md:mb-0 lg:text-fs-md text-fs-sm hover:underline hover:text-red">
                             <span>Commercial grade options</span>
                         </li>
-                        <li class="mb-2 md:mb-0 lg:text-fs-md text-fs-sm hover:underline hover:text-red">
+                        <li class="cursor-pointer mb-2 md:mb-0 lg:text-fs-md text-fs-sm hover:underline hover:text-red">
                             <span>Privacy Policy</span>
                         </li>
-                        <li class="mb-2 md:mb-0 lg:text-fs-md text-fs-sm hover:underline hover:text-red">
+                        <li class="cursor-pointer mb-2 md:mb-0 lg:text-fs-md text-fs-sm hover:underline hover:text-red">
                             <span>Customer Services</span>
                         </li>
                     </ul>
@@ -180,6 +233,7 @@
         </div>
     </footer>
 
+    <script src="../scripts/slidebar.js"></script>
 </body>
 
 </html>
